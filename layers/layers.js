@@ -94,11 +94,12 @@ lyr_PMD50aos_3.set('fieldAliases', {'Latitud': 'Latitud', 'Longitud': 'Longitud'
 lyr_IsohietasPMD50aos_4.set('fieldAliases', {'fid': 'fid', 'ID': 'ID', 'ELEV': 'ELEV', });
 lyr_LimiteProvincial_5.set('fieldAliases', {'gid': 'gid', });
 lyr_PMD50aos_3.set('fieldImages', {'Latitud': 'TextEdit', 'Longitud': 'TextEdit', 'PMD 50 año': 'TextEdit', });
-lyr_IsohietasPMD50aos_4.set('fieldImages', {'fid': 'Hidden', 'ID': 'Hidden', 'ELEV': 'Hidden', });
+lyr_IsohietasPMD50aos_4.set('fieldImages', {'fid': 'Hidden', 'ID': 'Hidden', 'ELEV': 'TextEdit', });
 lyr_LimiteProvincial_5.set('fieldImages', {'gid': 'Hidden', });
 lyr_PMD50aos_3.set('fieldLabels', {'Latitud': 'inline label', 'Longitud': 'inline label', 'PMD 50 año': 'inline label', });
-lyr_IsohietasPMD50aos_4.set('fieldLabels', {});
+lyr_IsohietasPMD50aos_4.set('fieldLabels', {'ELEV': 'no label', });
 lyr_LimiteProvincial_5.set('fieldLabels', {});
 lyr_LimiteProvincial_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
+
 });
